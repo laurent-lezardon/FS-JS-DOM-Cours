@@ -59,3 +59,16 @@ button {
     font-weight: 600;
     cursor: pointer;
 }
+
+.keypressdiv {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.keypress {
+    color: bisque;
+    display: block;
+}

@@ -13,7 +13,7 @@ const response = document.querySelector("p");
 console.log(questioncontainer);
 questioncontainer.style.borderRadius = "20px";
 questioncontainer.addEventListener("click", () => {
-    console.log("Click!");
+    // console.log("Click!");
     questioncontainer.classList.toggle("questioncontainerclick");
 });
 
@@ -29,7 +29,7 @@ btn2.addEventListener("click", () => {
 
 console.log(response);
 btn1.addEventListener("click", () => {
-    console.log("clik btn1 !");
+    // console.log("clik btn1 !");
 });
 
 
@@ -46,11 +46,11 @@ window.addEventListener('mousemove', (e) => {
 })
 
 window.addEventListener('mousedown', () => {
-    console.log("mouse is down !!!");
+    // console.log("mouse is down !!!");
     mousemove.style.transform = "scale(1.5) translate(-33%, -33%)";
 })
 window.addEventListener('mouseup', () => {
-    console.log("mouse is UP !!!");
+    // console.log("mouse is UP !!!");
     mousemove.style.transform = "scale(1) translate(-50%, -50%)";
 })
 
@@ -65,3 +65,23 @@ response.addEventListener('mouseover', () => {
     response.style.transform = "rotate(2deg)"
 
 });
+
+// **************** audio *************************
+const ring = () => {
+        const audio = new Audio();
+        audio.src = "Enter.mp3";
+        audio.play()
+    }
+    // ************** keypress event *******************
+const keypressContainer = document.querySelector(".keypress");
+// console.log("keycontain : ", keypressContainer);
+const key = document.getElementById("key");
+// console.log(key);
+document.addEventListener("keypress", (e) => {
+    // console.log(e);
+    key.innerText = e.key
+    if (e.key === "a") {
+        console.log("bingo!");
+        ring();
+    }
+})
