@@ -1,0 +1,96 @@
+* {
+  border-radius: 5px;
+  color: rgb(243, 240, 235);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.app {
+  padding: 3px;
+  display: grid;
+  gap: 3px;
+  width: 300px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 40px);
+  margin: 30px auto;
+  grid-template-areas:
+    "res res res res"
+    "k7 k8 k9 reset"
+    "k4 k5 k6 reset"
+    "k1 k2 k3 reset"
+    "k0 dot plus minus"
+    "equal equal times div";
+  border: 2px solid rgb(50, 107, 107);
+  background-color: rgb(212, 221, 233);
+}
+h3 {
+  border: 3px solid teal;
+  height: 34px;
+  align-self: center;
+  color: rgb(125, 125, 163);
+  text-align: right;
+  padding-right: 7px;
+
+  font-size: 1.7em;
+  font-weight: 700;
+}
+button {
+  border: solid 3px teal;
+  background-color: rgb(154, 194, 194);
+  transition: 0.3s;
+}
+button:hover {
+  background-color: rgb(124, 173, 173);
+}
+#result {
+  grid-area: res;
+  background-color: rgb(231, 241, 238);
+}
+#k9 {
+  grid-area: k9;
+}
+#k8 {
+  grid-area: k8;
+}
+#k7 {
+  grid-area: k7;
+}
+#k6 {
+  grid-area: k6;
+}
+#k5 {
+  grid-area: k5;
+}
+#k4 {
+  grid-area: k4;
+}
+#k3 {
+  grid-area: k3;
+}
+#k2 {
+  grid-area: k2;
+}
+#k1 {
+  grid-area: k1;
+}
+#k0 {
+  grid-area: k0;
+}
+#kC {
+  grid-area: reset;
+}
+#kequal {
+  grid-area: equal;
+}
+#k9 {
+  grid-area: k9;
+}
+#k9 {
+  grid-area: k9;
+}
+#k9 {
+  grid-area: k9;
+}
+#k9 {
+  grid-area: k9;
+}
